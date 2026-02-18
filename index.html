@@ -1,155 +1,120 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Igor Friese</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Portfólio | Desenvolvedor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <h1 class="titulo">Igor Vinicius da Silveira Friese</h1>
-        <nav> 
-            <ul> 
-                <li><a href="#sobre">Sobre mim</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-                <li><a href="https://www.linkedin.com/in/igorfriese/" target="_blank">LinkedIn</a></li>
-            </ul> 
-        </nav>
+      <h1>Olá, eu sou o Igor Vinicius da Silveira Friese</h1>
+      <p>
+        Aspirante a Desenvolvedor, apaixonado por tecnologia, programação e
+        criação de soluções digitais.
+      </p>
+      <button class="btn" onclick="scrollToSection('sobre')">Sobre mim</button>
+      <button class="btn" onclick="scrollToSection('projetos')">
+        Ver Projetos
+      </button>
+      <button class="btn" onclick="scrollToSection('habilidades')">
+        Habilidades
+      </button>
+      <button class="btn" onclick="scrollToSection('contato')">Contato</button>
     </header>
 
-    <main>
-        <section id="sobre">
-            <h2>Sobre mim</h2>
-            
-            <img src="" alt="">
+    <section id="sobre">
+      <h2>Sobre mim</h2>
+      <p id="sobreMim">
+        Sou desenvolvedor em formação com interesse na área de Back-End e curso
+        Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e por
+        transformar ideias em soluções práticas através do código.
+        <br /><br />
+        Atualmente estudo HTML, CSS e JavaScript com Node.js, além de ter
+        conhecimentos com a linguagem C# e plataforma .NET. Tenho grande
+        interesse em arquitetura de software, boas práticas de desenvolvimento e
+        clean code. Busco ampliar meus conhecimentos e me aprimorar para
+        futuramente conquistar minha primeira oportunidade na área de
+        tecnologia.
+      </p>
+    </section>
 
-            <article>
-                <p>
-                    Olá! Eu sou o Igor, sou um desenvolvedor C# .NET, com conhecimentos em Front-End: HTML, CSS e JavaScript.
-                </p>
-            </article>
+    <section id="projetos">
+      <h2>Projetos</h2>
+      <div class="projects">
+        <div class="card">
+          <h3>Calculadora Avançada</h3>
+          <p>
+            Aplicação desenvolvida em C# com operações matemáticas avançadas.
+          </p>
+          <a href="#">Ver projeto</a>
+        </div>
+        <div class="card">
+          <h3>Sistema de Cadastro</h3>
+          <p>CRUD simples utilizando HTML, CSS e JavaScript.</p>
+          <a href="#">Ver projeto</a>
+        </div>
+        <div class="card">
+          <h3>Landing Page</h3>
+          <p>Página responsiva focada em conversão e design moderno.</p>
+          <a href="#">Ver projeto</a>
+        </div>
+      </div>
+    </section>
 
-            <aside>
-                <h3>Habilidades</h3>
-                <ul>
-                    <li>C#</li>
-                    <li>.NET Framework</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul>
-            </aside>
-        </section>
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Node.js</div>
+        <div class="skill">C#</div>
+        <div class="skill">.NET</div>
+        <div class="skill">SQL</div>
+        <div class="skill">GitHub</div>
+        <div class="skill">Padrão MVC</div>
+      </div>
+    </section>
 
-        <section id="projeto">
-            <h2>Projetos</h2>
-            <article>
-                <h3>Portfólio</h3>
-                <p>
-                    Este foi o primeiro site que desenvolvi.
-                </p>
-            </article>
-        </section>
+    <section id="contato">
+      <h2>Contato</h2>
+      <div class="contact">
+        <p>
+          Estou aberto a oportunidades de estágio e projetos na área de
+          desenvolvimento. Entre em contato:
+        </p>
 
-        <section id="habilidades">
+        <div class="contact-links">
+          <p>
+            💼 LinkedIn:
+            <a href="https://www.linkedin.com/in/igorfriese" target="_blank"
+              >linkedin.com/in/igorfriese</a
+            >
+          </p>
+          <p>
+            💻 GitHub:
+            <a href="https://github.com/igorfriese" target="_blank"
+              >github.com/igorfriese</a
+            >
+          </p>
+          <p>
+            📧 Email:
+            <a href="mailto:igorfriese2000@gmail.com"
+              >igorfriese2000@gmail.com</a
+            >
+          </p>
+          <p>
+            📱 Telefone:
+            <a href="tel:+5547984210256">+55 (47) 98421-0256</a>
+          </p>
+        </div>
+      </div>
+    </section>
 
-            <h2>Habilidades e tecnologias</h2>
-
-            <table class="tabela">
-
-                <thead>
-                    <tr>
-                        <th>Tecnologia</th>
-                        <th>Nível</th>
-                        <th>Descrição</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td>C#</td>
-                        <td>Intermediário</td>
-                        <td>Construção do backend de um app</td>
-                    </tr>
-
-                    <tr>
-                        <td>.NET</td>
-                        <td>Intermediário</td>
-                        <td>Utilização do framework para backend</td>
-                    </tr>
-
-                    <tr>
-                        <td>HTML</td>
-                        <td>Iniciante</td>
-                        <td>Capaz de construir estruturas de página web semânticas e responsivas.</td>
-                    </tr>
-
-                    <tr>
-                        <td>CSS</td>
-                        <td>Iniciante</td>
-                        <td>Experiencia</td>
-                    </tr>
-
-                    <tr>
-                        <td>JavaScript</td>
-                        <td>Básico</td>
-                        <td>Desenvolvimento de scripts do lado do cliente para interações.</td>
-                    </tr>
-
-                </tbody>
-
-            </table>
-
-        </section>
-    </main>
-    
     <footer>
-        <section id="contato">
-            <h2>Contato</h2>
-
-            <address>
-                E-mail: <a href="mailto:igorfriese2000@gmail.com">igorfriese2000@gmail.com</a> <br>
-                Telefone: <a href="tel:+5547984210256">+55 (47) 98421-0256</a>
-
-            <p>Tem uma oportunidade? Entre em contato.</p>
-
-            <form action="">
-
-                <label for="nome">Nome: </label>
-                <input type="text" id="nome" name="nome" required> <br>
-
-                <label for="email">Email: </label>
-                <input type="email" id="email" name="email" required> <br>
-
-                <label for="telefone">Telefone: </label>
-                <input type="tel" id="telefone" name="telefone" required> <br>
-
-                <label for="assunto">Assunto: </label>
-                <select name="assunto" id="assunto">
-                    <option value="orcamento">Orçamento</option>
-                    <option value="duvida">Dúvida</option>
-                    <option value="outro">Outro</option>
-                </select>
-
-                <br>
-
-                <label for="mensagem">Mensagem: </label>
-                <textarea name="mensagem" id="mensagem" cols="20" rows="5" required></textarea> <br>
-
-                <input type="checkbox" id="inscricao" name="inscricao">
-                <label for="inscricao">Deseja receber minha newsletter? Fique por dentro.</label>
-
-                <br>
-
-                <input type="submit" value="Enviar Mensagem">
-                 
-            </form>
-
-        </section>
-        <p>&copy; Todos os diretos reservados.</p>
+      <p>© 2026 - Desenvolvido por Igor Friese</p>
     </footer>
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
